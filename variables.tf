@@ -16,11 +16,11 @@ variable "region" {
 #  default     = "vpc-0e0ba36fd1cca5339"
 #}
 
-#variable "vpc_cidr" {
-#  description = "vpc_cidr"
-#  type        = list(string)
-#  default     = ["172.26.0.0/16"]
-#}
+variable "vpc_cidr" {
+  description = "vpc_cidr"
+  type        = list(string)
+  default     = ["172.26.0.0/16"]
+}
 
 #variable "service_subnet0" {
 #  description = "service_subnet0"
