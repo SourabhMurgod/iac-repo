@@ -1,6 +1,6 @@
 variable "name" {
   description = "Name of the VPC and EKS Cluster"
-  default     = "Techieg-dev"
+  default     = "TechiegDev"
   type        = string
 }
 
