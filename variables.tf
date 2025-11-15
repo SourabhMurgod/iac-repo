@@ -18,8 +18,8 @@ variable "region" {
 
 variable "vpc_cidr" {
   description = "vpc_cidr"
-  type        = list(string)
-  default     = ["172.26.0.0/16"]
+  type        = string
+  default     = "172.26.0.0/16"
 }
 
 #variable "service_subnet0" {
