@@ -18,7 +18,7 @@ spec:
       - name: ecr-registry-secret
       containers:
       - name: boards-service
-        image: 818140567777.dkr.ecr.us-east-1.amazonaws.com/harness_boards_microservice:v3
+        image: 818140567777.dkr.ecr.us-east-1.amazonaws.com/harness_boards_microservice:v4
         ports:
         - containerPort: 8080
         - containerPort: 8081
