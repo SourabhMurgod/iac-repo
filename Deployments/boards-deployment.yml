@@ -18,14 +18,14 @@ spec:
       - name: ecr-registry-secret
       containers:
       - name: boards-service
-        image: 818140567777.dkr.ecr.us-east-1.amazonaws.com/harness_boards_microservice:v1
+        image: 818140567777.dkr.ecr.us-east-1.amazonaws.com/harness_boards_microservice:v3
         ports:
         - containerPort: 8080
         - containerPort: 8081
         livenessProbe:
           httpGet:
             path: /actuator/health/liveness
-            port: 8081
+            port: 8080
           initialDelaySeconds: 30
           periodSeconds: 10
           timeoutSeconds: 5
@@ -33,7 +33,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /actuator/health/readiness
-            port: 8081
+            port: 8080
           initialDelaySeconds: 10
           periodSeconds: 5
           timeoutSeconds: 3
